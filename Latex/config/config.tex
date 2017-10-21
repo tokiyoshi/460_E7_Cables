@@ -45,3 +45,16 @@
 \usepackage{enumitem}
 \newlist{steps}{enumerate}{1}
 \setlist[steps, 1]{label = Step \arabic*}
+
+\usepackage{caption}
+\usepackage{subcaption}
+\usepackage{mathtools}
+
+% numbering referneced labels in align environments
+\newcommand\numberthis{\addtocounter{equation}{1}\tag{\theequation}}
+
+%Adding in nice abs symbols
+\usepackage{mathtools}
+\DeclarePairedDelimiter\abs{\lvert}{\rvert}
+\DeclarePairedDelimiter\norm{\lVert}{\rVert}
+
