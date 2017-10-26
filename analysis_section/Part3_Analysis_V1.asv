@@ -1,0 +1,8 @@
+traceOpen = csvread('.\raw_data\scope_0.csv',3);
+figure(1); hold on;
+subplot(2,1,1)
+% yyaxis left
+plot(traceOpen(:,1), traceOpen(:,2))
+subplot(2,1,2)
+% yyaxis right
+plot(traceOpen(:,1), traceOpen(:,3))
