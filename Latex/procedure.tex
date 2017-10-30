@@ -1,10 +1,18 @@
 \subsection{Apparatus}
-The experiment is based around using some equipment, such as...
 
-\subsubsection{equpiment1}
-\label{sec:e1}
-We use stuff
+To determine properties of wave propagation in the cables, first a function generator is used to generate the voltage\textbackslash current waves while a oscilloscope is used to observe them. Multiple standard coaxial cables (same manufacturer and model) are used, with lengths of 60m and 9m (cable lengths of 18 m produced connecting two of these). \\
+
+As seen in the theory section, we are interested in cable termination so two pieces of semi-specialized equipment are used to create the termination boundary conditions. First is a cable shorter which creates a electrical bridge between the inner and outer section of the coaxial cable. This creates our \textit{shorted} cable termination. To create a \textit{matched} cable termination the cable is shorted, but a variable resistor is included in the path, which allows control over the impedance. \\
+
+Since the function generator mentioned before will have an internal resistance, this means that the generating side of the circuit will have a impedance equal to this internal resistance. The output impedance for our signal generator used was 50 $\Omega$. However this cable termination is not ideal, so a Buffer is placed between the input signal and the cable to allow for modulation of this input impedance.\\
 
 \subsection{Experimental Procedure}
 
-Then we actually run the experiment
+There are multiple goals of this experiment -- investigating and characterizing various cables properties, including: the dielectric material, different cable terminations, speed of propagation, characteristic impedance, and capacitance and inductance per unit length. \\
+
+Two methods are used to characterize these properties. The first uses standing waves in the cable to measure the various properties. Initially, measurements of the conductor diameters are taken to calculate characteristic capacitance and inductance (once the dielectric constant is known). A single tone sine wave is input to the cable and standing waves (current and voltage) at resonance for frequencies ranging from 1-10 MHz are measured and used to calculate impedance. The resonance frequencies and corresponding impedance can be used for calculating the speed of the wave and the dielectric constant. A higher resolution of data is needed around the resonance to ensure accuracy and a better fit. The shorted and open cable terminations will provide different solutions and hence they are both studied.\\
+
+The next method uses pulsed signals to investigate the same properties via a different procedure and investigate the cable further. A single pulse will allow us to see the effects of the cable terminations in a more visual manner. The matched cable termination can be determined at this point by finding the point at which the reflected wave does not get reflected and instead is absorbed by the resistor. The pulsed input will then allow for qualitative study of the terminations, and allow for verification based off of the alternative measure velocity of the wave by measuring the time to reflect from one end of the cable to the other. The length of the cable can also be altered to look at how this affects the the wave propagation. 
+
+\subsection{Data Analysis}
+All data was analyzed using custom Matlab (Mathworks Ltd) scripts.\\
